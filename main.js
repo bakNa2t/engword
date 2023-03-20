@@ -30,7 +30,7 @@ async function fetchApi(word) {
 
     } catch (error){
         console.log(error);
-        infoTextEl.innerText = `Something happened worng, try it agai later`
+        infoTextEl.innerText = `Something happened worng, try it again later`
     }
 }
 
