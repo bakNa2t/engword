@@ -12,10 +12,10 @@ body {
 }
 
 .container {
-    background-color: rgba(163, 163, 194, 0.8);
+    background-color: rgba(163, 163, 194, 0.7);
     padding: 28px;
     border-radius: 10px;
-    box-shadow: 0 10px 10px rgba(255, 204, 204, 0.8);
+    box-shadow: 3px 7px 10px rgba(255, 204, 204, 0.7);
     width: 90%;
     margin: 10px;
     max-width: 450px;
@@ -24,19 +24,37 @@ body {
     font-weight: 500;
 }
 
+.container:hover {
+    background-color: rgba(163, 163, 194, 0.8);
+    box-shadow: 5px 10px 10px rgba(255, 204, 204, 0.9);
+    transition: 0.8s;
+}
+
 .container_heading {
     font-size: 28px;
+    text-shadow: 2px 2px 5px rgba(99,81,71, 0.9);
 }
 
 .input {
     height: 53px;
     width: 300px;
     background-color: rgba(255, 255, 255, 0.4);
-    border-color: rgba(255, 255, 255, 0.4);
-    font-size: 16px;
+    border-color: rgba(255, 255, 255, 0.2);
+    font-size: 18px;
     padding: 0 42px;
-    border-radius: 5px;
+    border-radius: 10px;
     outline: none;
+}
+
+.input::placeholder {
+    font-size: 14px;
+    color: rgba(38,67,72,0.9);
+}
+
+.input:focus {
+    box-shadow: 4px 4px 10px rgba(176,196,222, 0.9);
+    background-color: rgba(240,248,255,0.7);
+    border-color: rgba(135,206,250, 0.5);
 }
 
 .meaning_container {
