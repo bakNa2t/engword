@@ -14,6 +14,11 @@ async function fetchApi(word) {
     const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     const result = await fetch(url).then((res) => res.json());
 
+    if (result.ok !== 200) {
+      infoTextEl.innerText = `The word "${word}" was not found, try again`;
+      return;
+    }
+
     if (result.title) {
       meaningContainerEl.style.display = "block";
       infoTextEl.style.display = "none";
@@ -37,9 +42,15 @@ async function fetchApi(word) {
 inputEl.addEventListener("keyup", (e) => {
   if (inputEl.value && e.key === "Enter") {
     fetchApi(inputEl.value);
+  } else {
+    infoTextEl.innerText = `Please provide a word to search`;
   }
 });
 
 btnSearch.addEventListener("click", () => {
-  fetchApi(inputEl.value);
+  if (inputEl.value !== "") {
+    fetchApi(inputEl.value);
+  } else {
+    infoTextEl.innerText = `Please provide a word to search`;
+  }
 });
