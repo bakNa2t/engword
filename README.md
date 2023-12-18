@@ -2,7 +2,7 @@
 
 #### What has been implemented:
 
-- used [Free Dictionary API](https://dictionaryapi.dev/) to data from server
+- used [Free Dictionary API](https://dictionaryapi.dev/) to fetch data from server
 - JS allows catch error if a `word` wasn't found `try {} catch()` block
 - using `innerHTML` to display the meaning and pronunciation
 - if the word isn't found then an error message is displayed
@@ -11,4 +11,6 @@
 
 ---
 
-<img src="https://github.com/bakNa2t/engword/blob/main/img_Readme.jpg" title="dictionary"  alt="English Dictionary" width="500" height="281"/>
+<p align="center">
+    <img src="https://github.com/bakNa2t/engword/blob/main/img_Readme.jpg" title="dictionary"  alt="English Dictionary" width="500" height="281"/>
+</p>
