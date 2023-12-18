@@ -8,15 +8,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <noscript><h3>Please enable JavaScript in your browser!</h3> </noscript>
+    <noscript><h3>Please enable JavaScript in your browser!</h3></noscript>
     <div class="container">
       <h1 class="container_heading">English Dictionary</h1>
-      <input
-        placeholder="Typing here ..."
-        type="text"
-        class="input"
-        id="input"
-      />
+      <div class="container_search">
+        <input
+          placeholder="Typing here ..."
+          type="text"
+          class="input"
+          id="input"
+        />
+        <button class="btn" id="btn" type="submit">
+          <ion-icon name="search-sharp" size="large"></ion-icon>
+        </button>
+      </div>
       <p class="info_text" id="info_text">Insert a word and press enter</p>
       <div class="meaning_container" id="meaning_container">
         <p>Word Title: <span class="title" id="title">____</span></p>
@@ -30,5 +35,13 @@
       <a href="https://github.com/bakna2t" target="_blank">_&#216;k</a>
     </div>
     <script src="main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
