@@ -12,12 +12,13 @@ async function fetchApi(word) {
     meaningContainerEl.style.display = "none";
     infoTextEl.innerText = `Searching the meanig of "${word}"`;
     const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
-    const result = await fetch(url).then((res) => res.json());
-
-    if (result.ok !== 200) {
-      infoTextEl.innerText = `The word "${word}" was not found, try again`;
-      return;
-    }
+    const result = await fetch(url).then((res) => {
+      if (!res.ok) {
+        throw new Error(error);
+      } else {
+        return res.json();
+      }
+    });
 
     if (result.title) {
       meaningContainerEl.style.display = "block";
@@ -34,8 +35,9 @@ async function fetchApi(word) {
       audioEl.src = result[0].phonetics[0].audio;
     }
   } catch (error) {
-    console.log(error);
-    infoTextEl.innerText = `Something happened worng, try it again later`;
+    console.log(error.message);
+    infoTextEl.innerText = `The word "${word}" was not found, try again`;
+    // infoTextEl.innerText = `Something happened worng, try it again later`;
   }
 }
 
