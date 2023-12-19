@@ -42,11 +42,10 @@ async function fetchApi(word) {
 }
 
 inputEl.addEventListener("keyup", (e) => {
-  if (inputEl.value && e.key === "Enter") {
+  if (inputEl.value !== "" && e.key === "Enter") {
     fetchApi(inputEl.value);
   } else {
     infoTextEl.innerText = `Please provide a word to search`;
-    infoTextEl.classList.remove("info_text__error");
   }
 });
 
@@ -55,6 +54,5 @@ btnSearch.addEventListener("click", () => {
     fetchApi(inputEl.value);
   } else {
     infoTextEl.innerText = `Please provide a word to search`;
-    infoTextEl.classList.remove("info_text__error");
   }
 });

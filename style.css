@@ -85,6 +85,8 @@ body {
 }
 
 .info_text {
+  margin: 2rem auto 1rem;
+  padding: 0 0.5rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #322;
@@ -92,10 +94,11 @@ body {
 }
 
 .info_text__error {
+  width: fit-content;
   font-weight: 600;
   border-radius: 4px;
-  background-color: rgba(205, 92, 92, 0.6);
-  text-shadow: 0 0 4px rgba(206, 175, 175, 0.9);
+  background-color: rgba(205, 92, 92, 0.4);
+  text-shadow: 0 0 4px rgba(254, 255, 255, 0.9);
 }
 
 .btn:hover {
