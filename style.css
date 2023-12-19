@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
 body {
   margin: 0;
@@ -109,6 +109,19 @@ body {
 
 .meaning_container {
   display: none;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+}
+
+.meaning_container p {
+  font-style: italic;
+}
+
+.meaning_container .title,
+.meaning_container .meaning {
+  font-style: normal;
+  font-weight: 600;
 }
 
 /* 'Designed by' element*/
