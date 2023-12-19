@@ -39,7 +39,7 @@ body {
 
 .container_heading {
   font-size: 28px;
-  text-shadow: 2px 2px 5px rgba(99, 81, 71, 0.9);
+  text-shadow: 1px 1px 4px rgba(99, 81, 71, 0.9);
 }
 
 .container_search {
@@ -54,12 +54,10 @@ body {
   width: 340px;
   background-color: rgba(255, 255, 255, 0.4);
   border: none;
-  /* border-color: rgba(255, 255, 255, 0.2); */
   font-size: 18px;
   padding: 0 20px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  /* border-radius: 10px; */
   outline: none;
   transition: all 0.4s ease-in-out;
 }
@@ -72,7 +70,6 @@ body {
 .input:focus {
   box-shadow: 0px 0px 8px 2px rgba(176, 196, 222, 0.9);
   background-color: rgba(240, 248, 255, 0.7);
-  /* border-color: rgba(135, 206, 250, 0.5); */
   transition: all 0.4s ease-in-out;
 }
 
@@ -85,6 +82,20 @@ body {
   border: none;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
+}
+
+.info_text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #322;
+  text-shadow: 0 0 4px rgba(255, 204, 204, 0.9);
+}
+
+.info_text__error {
+  font-weight: 600;
+  border-radius: 4px;
+  background-color: rgba(205, 92, 92, 0.6);
+  text-shadow: 0 0 4px rgba(206, 175, 175, 0.9);
 }
 
 .btn:hover {

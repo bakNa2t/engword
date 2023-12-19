@@ -37,7 +37,7 @@ async function fetchApi(word) {
   } catch (error) {
     console.log(error.message);
     infoTextEl.innerText = `The word "${word}" was not found, try again`;
-    // infoTextEl.innerText = `Something happened worng, try it again later`;
+    infoTextEl.classList.add("info_text__error");
   }
 }
 
@@ -46,6 +46,7 @@ inputEl.addEventListener("keyup", (e) => {
     fetchApi(inputEl.value);
   } else {
     infoTextEl.innerText = `Please provide a word to search`;
+    infoTextEl.classList.remove("info_text__error");
   }
 });
 
@@ -54,5 +55,6 @@ btnSearch.addEventListener("click", () => {
     fetchApi(inputEl.value);
   } else {
     infoTextEl.innerText = `Please provide a word to search`;
+    infoTextEl.classList.remove("info_text__error");
   }
 });
