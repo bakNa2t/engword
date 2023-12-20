@@ -4,7 +4,7 @@
 
 - used [Free Dictionary API](https://dictionaryapi.dev/) to fetch data from server
 - JS allows catch error if a `word` wasn't found `try {} catch()` block
-- using `innerHTML` to display the meaning and pronunciation
+- used `innerHTML` to display the meaning and pronunciation
 - if the word isn't found then an error message is displayed
 - the dictionary allows to get the meaning of english words and their pronunciation
 - handle error if the search word doesn't exist and display information message word `The word was not found`
@@ -14,5 +14,5 @@
 ---
 
 <p align="center">
-    <img src="https://github.com/bakNa2t/engword/images/blob/main/img_Readme.jpg" title="dictionary"  alt="English Dictionary" width="500" height="281"/>
+    <img src="images/img_Readme.jpg" title="dictionary"  alt="English Dictionary" width="500" height="281"/>
 </p>
