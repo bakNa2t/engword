@@ -14,5 +14,5 @@
 ---
 
 <p align="center">
-    <img src="https://github.com/bakNa2t/engword/blob/main/img_Readme.jpg" title="dictionary"  alt="English Dictionary" width="500" height="281"/>
+    <img src="https://github.com/bakNa2t/engword/images/blob/main/img_Readme.jpg" title="dictionary"  alt="English Dictionary" width="500" height="281"/>
 </p>
