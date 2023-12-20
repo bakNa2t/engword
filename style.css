@@ -178,6 +178,10 @@ noscript h3 {
   box-shadow: 0 0 4px rgba(255, 240, 245, 0.8);
 }
 
+.spinner {
+  display: none;
+}
+
 @media (max-width: 500px) {
   .container {
     width: 70%;

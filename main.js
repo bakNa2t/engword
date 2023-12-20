@@ -7,6 +7,8 @@ const audioEl = document.getElementById("audio");
 const btnSearch = document.getElementById("btn-search");
 
 async function fetchApi(word) {
+  displaySpinner();
+
   try {
     infoTextEl.style.display = "block";
     meaningContainerEl.style.display = "none";
@@ -39,6 +41,8 @@ async function fetchApi(word) {
     infoTextEl.innerText = `The word "${word}" was not found, try again`;
     infoTextEl.classList.add("info_text__error");
   }
+
+  hideSpinner();
 }
 
 inputEl.addEventListener("keyup", (e) => {
@@ -56,3 +60,13 @@ btnSearch.addEventListener("click", () => {
     infoTextEl.innerText = `Please provide a word to search`;
   }
 });
+
+// Show spinner
+function displaySpinner() {
+  document.querySelector(".spinner").classList.add("throbber-loader");
+}
+
+// Hide spinner
+function hideSpinner() {
+  document.querySelector(".spinner").classList.remove("throbber-loader");
+}
