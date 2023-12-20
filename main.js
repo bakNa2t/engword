@@ -7,6 +7,7 @@ const audioEl = document.getElementById("audio");
 const btnSearch = document.getElementById("btn-search");
 
 async function fetchApi(word) {
+  // Display spinner
   displaySpinner();
 
   try {
@@ -37,11 +38,10 @@ async function fetchApi(word) {
       audioEl.src = result[0].phonetics[0].audio;
     }
   } catch (error) {
-    console.log(error.message);
     infoTextEl.innerText = `The word "${word}" was not found, try again`;
     infoTextEl.classList.add("info_text__error");
   }
-
+  // Hide spinner
   hideSpinner();
 }
 
