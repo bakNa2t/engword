@@ -9,6 +9,7 @@
 - the dictionary allows to get the meaning of english words and their pronunciation
 - handle error if the search word doesn't exist and display information message word `The word was not found`
 - if `input` search box is empty then an error message is displayed
+- displayed `throbber loader` while fetching data from server
 - click here to try => <a href="https://bakna2t.github.io/engword/" target="_blank">English Dictionary</a>
 
 ---
