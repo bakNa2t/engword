@@ -7,8 +7,8 @@ const audioEl = document.getElementById("audio");
 const btnSearch = document.getElementById("btn-search");
 
 async function fetchApi(word) {
-  // Display spinner
-  displaySpinner();
+  // Display loader
+  displayLoader();
 
   try {
     infoTextEl.style.display = "block";
@@ -41,8 +41,8 @@ async function fetchApi(word) {
     infoTextEl.innerText = `The word "${word}" was not found, try again`;
     infoTextEl.classList.add("info_text__error");
   }
-  // Hide spinner
-  hideSpinner();
+  // Hide loader
+  hideLoader();
 }
 
 inputEl.addEventListener("keyup", (e) => {
@@ -61,12 +61,12 @@ btnSearch.addEventListener("click", () => {
   }
 });
 
-// Show spinner
-function displaySpinner() {
-  document.querySelector(".spinner").classList.add("throbber-loader");
+// Show loader
+function displayLoader() {
+  document.querySelector(".loader").classList.add("throbber-loader");
 }
 
-// Hide spinner
-function hideSpinner() {
-  document.querySelector(".spinner").classList.remove("throbber-loader");
+// Hide loader
+function hideLoader() {
+  document.querySelector(".loader").classList.remove("throbber-loader");
 }
